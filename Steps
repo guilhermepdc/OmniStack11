@@ -1,0 +1,137 @@
+// 01 Install NodeJS
+// 02 Install and configure Visual Studio Code
+theme: Dracula
+icons: Material Icon Theme
+// 03 Arquitetura da aplicação
+Back-end: API(Application Programing Interface) Restful
+
+Front-end: React and React-Native
+
+Extern Services
+
+// 04 Criar projeto com NodeJS
+ 
+mkdir aulas
+cd aulas
+mkdir backend
+cd backend
+npm init -y
+
+:://inside VSCode
+code.
+
+:://express é um micro-framework
+npm install express
+
+:://create the main file of the application
+index.js
+
+// 05 Entendendo o React
+Front-end: 
+::Abordagem tradicional:
+Browser (req)-> JS(HTML, CSS, JavaScript) (res em HTML)-> Browser
+
+::Abordagem SPA (Single Page Application):
+
+Browser(HTML, CSS, JavaScript) (req)->  JS (res em JSON)->  Browser
+
+// 06 Criar projeto com React
+
+:://npx é parecido com o npm só que instala um pacote externo sem a necessidade de instalar o pacote de forma global.
+npx create-react-app frontend
+
+cd frontend
+
+::// 'npm start' executa um script que esta no package.json
+npm start
+
+
+
+// 07 Entendendo o React Native
+::Abordagem tradicional
+.ipa ou .apk ---> mobile
+
+::Abordagem React-Native
+React-Native ---> .ipa ou .apk (mobile)
+
+:://Porque utilizar o Expo?
+::é um conunto de bibliotecas para o React-Native prontos para usar aplicativos nativos do seu dispotivo mobile (camera, teclado, mapas, etc...).
+
+::arquitetura do Expo
+
+React-Native (apenas código JavaScript)---> Mobile
+
+// 08 Entendendo conceitos da aplicação back-end
+
+::Rotas/Recursos
+
+::Métodos HTTP
+GET: Buscar/listar uma informação do back-end
+POST: Criar uma informação no back-end
+PUT: Alterar uma informação no back-end
+DELETE: Deletar uma informação no back-end
+
+::instalar Insominia ou Postman para testar métodos.
+
+::Tipos de parâmetros
+
+:Query Params: Parâmetros noemados enviados na rota após "?" (filtros e paginação)
+:Route Rapams: Parâmetros utilizados para identificar recursos
+:Request Body: Corpo da requisição, utilizado para criar ou alterar recursos
+
+::Resquest & Response
+Requeste: reponsável por guardar todos os dados/informações que vem através da requisição do usuário
+Reponse: responsável por retornar a informação para o usuário
+
+// 09 Nodemon
+::nodemon reinicia a aplicação automaticamente toda vez que fazemos uma alteração no projeto.
+
+npm install nodemon -D
+
+script: { "start": "nodemon index.js" }
+
+// 10 Data Base/Banco de Dados
+
+:SQL: MySQL, SQLite, PostgresSQL, Oracle, Microsoft SQL Server, ...
+
+::Driver: Select * from users
+::Query Builder: table('users').select('*').where()
+
+KNEX.js
+npm install knex
+npm install sqlite3
+
+::NoSQL: MongoDB, CouchDB, ...
+
+// 11 Entidades DB & Funcionalidades da aplicação
+:: Entidades é tudo aquilo que será salva no banco de dados.
+
+ONGs
+Casos (incident)
+
+:: Funcionalidades são ações que poderão ser realizadas na aplicação
+
+Login da ONG
+Logout da ONG
+Cadastro de ONG
+Cadastrar novos casos
+Deletar casos
+Listar casos específicos de uma ONG
+Listar todos os casos
+Entrar em contato com a ONG (whats e email)
+
+// 12 Migrations - Criar tabelas no baco de dados
+
+::Migrations cria um histórico das tabelas do banco de dados.
+
+npx knex migrate:make create_ongs
+::// run
+npx knex migrate:latest
+
+
+::// desfaz ultima tabela criada no DB
+npx knex migrate:rollback
+
+
+
+
