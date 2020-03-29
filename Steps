@@ -61,6 +61,7 @@ React-Native ---> .ipa ou .apk (mobile)
 
 React-Native (apenas código JavaScript)---> Mobile
 
+// BACK-END////////////////////////
 // 08 Entendendo conceitos da aplicação back-end
 
 ::Rotas/Recursos
@@ -132,6 +133,52 @@ npx knex migrate:latest
 ::// desfaz ultima tabela criada no DB
 npx knex migrate:rollback
 
+::// ver todas migrations que foram criadas
+npx knex migrate:status
+
+// 13 CORS - módulo de segurança
+:: determina quem vai poder acessar a aplicação.
+
+npm install cors
 
 
+// FRONT-END////////////////////////
+// 14 Limpeza da estrutura front-end
+
+npm start
+
+// 15 Conceitos do React
+
+:Carrega o React e o ReactDOM
+::React-Dom é a integração do React com o navegador. Dom é a arvore de elementos do html
+
+::Render. renderiza e coloca o JS em tela
+
+::componente é um função que retorna um HTML e pode ter uma função JV. NOTA: Todos os componentes devem começar com letra maiuscula
+
+:: JSX (Java Script XML).. Quando o JS esta integrado no HTML.
+
+:: Propriedades = Quase a mesma coisa que um atributo no HTML ex.: id="TITLE".
+
+:: Estado é uma informação que vai ser mantida pelo componente, mas pode ser sobreposta por uma nova informação. Porém nunca pode ser manipulada diretamente por causa do principio de imutabilidade.
+
+// 16 Página de Login
+
+::Google font
+:Roboto
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+::feather icons - pacote de icones
+npm install react-icons
+
+
+// 17 configurando Rotas
+::pacote de rotas
+npm install react-router-dom
+
+// 18
+::Axios é um cliente http responsável por conseguir fazer a chamadas ao API do backend e receber as respostas
+
+npm install axios
 
