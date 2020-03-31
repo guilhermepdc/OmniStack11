@@ -81,7 +81,7 @@ DELETE: Deletar uma informação no back-end
 :Request Body: Corpo da requisição, utilizado para criar ou alterar recursos
 
 ::Resquest & Response
-Requeste: reponsável por guardar todos os dados/informações que vem através da requisição do usuário
+Request: reponsável por guardar todos os dados/informações que vem através da requisição do usuário
 Reponse: responsável por retornar a informação para o usuário
 
 // 09 Nodemon
@@ -177,8 +177,85 @@ npm install react-icons
 ::pacote de rotas
 npm install react-router-dom
 
-// 18
+// 18 Axios no frontend
 ::Axios é um cliente http responsável por conseguir fazer a chamadas ao API do backend e receber as respostas
 
 npm install axios
 
+// REACT-NATIVE//////////////////////
+//19 Expo
+npm install -g expo-cli
+expo -h
+
+::criar projeto
+expo init mobile
+cd mobile
+yarn start
+
+// 20 Rotas com React Navegations
+:: Utilizado em projetos que usam o EXPO. Acesse: https://reactnavigation.org/docs/getting-started/
+
+sudo su
+
+npm install react-native
+
+npm install @react-navigation/native
+
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+npm install @react-navigation/stack
+
+expo install expo-constants
+
+expo start
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 42:00
+
+// 22 Integração com Whatsapp e  E-mail
+expo install expo-mail-composer
+
+// 22 Install AXIOS
+npm install axios
+
+useEffect é uma função que vai ser disparada toda vez que uma variável contida em um array é alterada
+
+
+// Valores monetários ex.: R$
+npm install intl
+
+
+// FUNCIONALIDADES AVANÇADAS ///////
+
+// 23 Testes
+
+:: Celebrate é uma ferramenta de validações que integra o Joi (validação de JavaScript) com o Express.
+
+npm install celebrate
+
+
+:: TDD Test-Driven Development
+:: FrameWork de teste para o jode. jest
+npm install jest -D
+npx jest --init
+(Y, 1(node), N, Y)
+
+:: Ambiente de testes
+npm install cross-env
+
+:: Validar requisições http
+npm install supertest -D
+
+
+// 24 Deploy
+::Heroku ou Netlify para aplicações pequenas
+
+::DigitalOcean para aplicações razoavelmente grande
+
+
+::Azure, AWS ou GCP para aplicações que crescem exponencialmente.
+
+// Estudar
+
+:: Padrões de código: ESLint, Prettier
+:: Autenticação JWT
+:: Styled Components
