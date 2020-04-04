@@ -19,20 +19,19 @@ export default StyleSheet.create({
     borderRadius: 8,
     backgroundColor: "#FFF",
     marginBottom: 16,
-    marginTop: 38,
+    marginTop: 48
   },
 
   incidentProperty: {
     fontSize: 14,
     color: "#41414d",
     fontWeight: "bold",
-    marginTop: 14,
+    marginTop: 24
   },
 
   incidentValue: {
     marginTop: 8,
     fontSize: 15,
-    marginBottom: 20,
     color: "#737380"
   },
 
@@ -40,26 +39,26 @@ export default StyleSheet.create({
     padding: 24,
     borderRadius: 8,
     backgroundColor: "#FFF",
-    marginBottom: 16,
+    marginBottom: 16
   },
 
   heroTitle: {
     fontWeight: "bold",
     fontSize: 20,
     color: "#13131a",
-    lineHeight: 30,
+    lineHeight: 30
   },
 
   heroDescription: {
     fontSize: 15,
     color: "#737380",
-    marginTop: 16,
+    marginTop: 16
   },
 
   actions: {
     marginTop: 16,
     flexDirection: "row",
-    justifyContent: "space-between",
+    justifyContent: "space-between"
   },
 
   action: {
@@ -68,13 +67,12 @@ export default StyleSheet.create({
     height: 50,
     width: "48%",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "center"
   },
 
   actionText: {
     color: "#FFF",
     fontSize: 15,
-    fontWeight: "bold",
+    fontWeight: "bold"
   }
-
 });

@@ -209,24 +209,24 @@ expo install expo-constants
 
 expo start
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>> 42:00
 
 // 22 Integração com Whatsapp e  E-mail
 expo install expo-mail-composer
 
-// 22 Install AXIOS
+
+// 23 Install AXIOS : Conexão com a API
 npm install axios
 
 useEffect é uma função que vai ser disparada toda vez que uma variável contida em um array é alterada
 
 
-// Valores monetários ex.: R$
+// 24 Valores monetários ex.: R$
 npm install intl
 
 
-// FUNCIONALIDADES AVANÇADAS ///////
+// 25 FUNCIONALIDADES AVANÇADAS ///////
 
-// 23 Testes
+// 26 Testes
 
 :: Celebrate é uma ferramenta de validações que integra o Joi (validação de JavaScript) com o Express.
 
@@ -234,7 +234,7 @@ npm install celebrate
 
 
 :: TDD Test-Driven Development
-:: FrameWork de teste para o jode. jest
+:: FrameWork de teste para o node. jest
 npm install jest -D
 npx jest --init
 (Y, 1(node), N, Y)
@@ -246,7 +246,7 @@ npm install cross-env
 npm install supertest -D
 
 
-// 24 Deploy
+// 27 Deploy
 ::Heroku ou Netlify para aplicações pequenas
 
 ::DigitalOcean para aplicações razoavelmente grande
@@ -254,7 +254,7 @@ npm install supertest -D
 
 ::Azure, AWS ou GCP para aplicações que crescem exponencialmente.
 
-// Estudar
+// 28 Estudar
 
 :: Padrões de código: ESLint, Prettier
 :: Autenticação JWT
